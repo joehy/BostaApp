@@ -1,0 +1,28 @@
+<!-- fragment_album_details.xml -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <!-- Define data binding variables if needed -->
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+
+        <!-- Add a search bar for filtering images (optional) -->
+        <EditText
+            android:id="@+id/searchBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/search_images"
+            />
+
+        <!-- RecyclerView for displaying images in a grid -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/imagesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/searchBar" />
+    </RelativeLayout>
+</layout>
